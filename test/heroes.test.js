@@ -69,6 +69,6 @@ test('should not mutate input array', () => {
     { name: 'маг', health: 100 },
     { name: 'лучник', health: 80 },
   ];
-  const sortedHeroes = sortHeroes(receivedBefore);
+  sortHeroes(receivedBefore);
   expect(receivedBefore).toStrictEqual(receivedAfter);
 });
